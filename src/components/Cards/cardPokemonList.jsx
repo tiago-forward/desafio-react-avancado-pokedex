@@ -41,9 +41,10 @@ export const CardContainer = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 1px solid;
-        background: rgb(17,9,8);
-        background: linear-gradient(56deg, rgba(17,9,8,1) 0%, rgba(250,78,95,0.6805555555555556) 51%, rgba(250,78,95,0.3680555555555556) 100%);
+        border: 1px solid #ffffff;
+        border-radius: 0.5rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background: rgb(240, 215, 212);
 
         img {
             position: relative;
@@ -51,7 +52,8 @@ export const CardContainer = styled.div`
         }
 
         span {
-            color: white;
+            color: black;
+            font-weight: 700;
             text-transform: capitalize;
             margin-bottom: 1rem;
         }
