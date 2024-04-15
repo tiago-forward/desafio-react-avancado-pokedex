@@ -1,18 +1,9 @@
-import { useEffect, useState } from "react"
 import styled from "styled-components"
-import { api, repositoriesQuantity } from "../../services/api";
+import { useContext } from "react"
+import { PokemonContext } from "../../contexts/pokemonContext";
 
 export function Card() {
-    const [pokemonsList, setPokemonsList] = useState([])
-
-    useEffect(() => {
-        async function getPokemons() {
-            const response = await api.get(``)
-            setPokemonsList(response.data.results)
-        }
-
-        getPokemons()
-    }, []);
+    const { pokemonsList } = useContext(PokemonContext)
 
     return (
         <CardContainer>
@@ -33,7 +24,6 @@ export function Card() {
 }
 
 export const CardContainer = styled.div`
-    background-color: antiquewhite;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,6 +42,8 @@ export const CardContainer = styled.div`
         flex-direction: column;
         align-items: center;
         border: 1px solid;
+        background: rgb(17,9,8);
+        background: linear-gradient(56deg, rgba(17,9,8,1) 0%, rgba(250,78,95,0.6805555555555556) 51%, rgba(250,78,95,0.3680555555555556) 100%);
 
         img {
             position: relative;
@@ -59,7 +51,9 @@ export const CardContainer = styled.div`
         }
 
         span {
-            
+            color: white;
+            text-transform: capitalize;
+            margin-bottom: 1rem;
         }
     }
 `

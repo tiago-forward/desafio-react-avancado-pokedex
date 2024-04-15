@@ -6,4 +6,4 @@ const api = axios.create({
 })
 //?limit=${repositoriesQuantity}
 
-export { api, repositoriesQuantity }
+export { api }
