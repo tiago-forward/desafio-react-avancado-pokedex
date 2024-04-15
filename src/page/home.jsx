@@ -1,4 +1,4 @@
-import { Card } from "../components/Cards/cards"
+import { CardPokemonList } from "../components/Cards/cardPokemonList"
 
 export function Home() {
     return (
@@ -7,7 +7,7 @@ export function Home() {
                 <h1>Pokemon</h1>
             </header>
             <main>
-                <Card />
+                <CardPokemonList />
             </main>
             <footer>
                 

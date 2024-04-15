@@ -2,17 +2,17 @@ import styled from "styled-components"
 import { useContext } from "react"
 import { PokemonContext } from "../../contexts/pokemonContext";
 
-export function Card() {
-    const { pokemonsList } = useContext(PokemonContext)
+export function CardPokemonList() {
+    const { dataPokemons } = useContext(PokemonContext)
 
     return (
         <CardContainer>
             <div>
                 <ul>
-                    {pokemonsList.map((pokemon, index) => (
+                    {dataPokemons.names.map((name, index) => (
                         <li key={index}>
                             <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
-                            <span>{pokemon.name}</span>
+                            <span>{name}</span>
                         </li>
                     ))}
                 </ul>
