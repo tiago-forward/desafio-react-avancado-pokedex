@@ -10,10 +10,12 @@ export function CardPokemonList() {
             <div>
                 <ul>
                     {dataPokemons.names.map((name, index) => (
-                        <li key={index}>
-                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
-                            <span>{name}</span>
-                        </li>
+                        <a href="#">
+                            <li key={index}>
+                                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
+                                <span>{name}</span>
+                            </li>
+                        </a>
                     ))}
                 </ul>
             </div>
@@ -44,7 +46,7 @@ export const CardContainer = styled.div`
         border: 1px solid #ffffff;
         border-radius: 0.5rem;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        background: rgb(240, 215, 212);
+        background: #f0d7d4;
 
         img {
             position: relative;
@@ -56,6 +58,24 @@ export const CardContainer = styled.div`
             font-weight: 700;
             text-transform: capitalize;
             margin-bottom: 1rem;
+        }
+    }
+
+
+    button {
+        cursor: pointer;
+        width: 10rem;
+        height: 3rem;
+        border-radius: 0.5rem;
+        margin-bottom: 2rem;
+        border: none;
+    
+        &:hover {
+            background-color: #f3f3f383;
+        }
+        
+        &:active {
+            transform: scale(1.1);
         }
     }
 `
