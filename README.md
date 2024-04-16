@@ -12,7 +12,7 @@
 
 ## Introdução
 
-#### Esse desafio faz parte do curso DevQuest, ele serve para nos desafiarmos e nos preparar para futuros testes técnicos no mercado de trabalho. Esse projeto foi desenvolvido completamente por mim, através dos conteúdos ensinados no curso.
+#### Esse desafio faz parte do curso DevQuest, ele serve para nos desafiarmos e nos preparar para futuros testes técnicos no mercado de trabalho. Desenvolvi este projeto através dos conteúdos ensinados no curso e as documentações.
 
 ## Objetivo
 
@@ -20,19 +20,19 @@
 
 <li>Neste site contém as seguintes informações:<br><br>
 
-    1. A home apresenta uma listagem com 10 pokemons iniciais; ❌
+    1. A home apresenta uma listagem com 10 pokemons iniciais; ✅
 
-    2. A home contém a baixo da lista um botão "Carregar mais", que quando clicado, busca mais 10 pokemons e adiciona a listagem atual; ❌
+    2. Na home, contém a baixo da lista, um botão "Carregar mais" que quando clicado, busca mais 10 pokemons e adiciona a listagem atual; ✅
 
-    3. Essa listagem mostra a imagem e nome de cada pokemon; ✅
+    3. Essas listagens mostra a imagem e nome de cada pokemon; ✅
 
-    4. Na listagem, ao clicar em cada pokemon exibirá um container de informações detalhadas sobre o pokemon, como: ❌
+    4. Na listagem, ao clicar em cada pokemon, vai exibir um container de informações detalhadas sobre o pokemon, como: ❌
+        - Tipo do pokemon (type). ❌
         - Lista de movimentos do pokemon (moves); ❌
         - Lista de habilidades do pokemon (abilities); ❌
         - Na lista de habilidades apresenta o nome e o texto
     descritivo da habilidade.
 
-    5. Tipo do pokemon (type). ❌
 
 <li>Neste projeto foram aplicados os seguintes requistos:<br><br>
 
