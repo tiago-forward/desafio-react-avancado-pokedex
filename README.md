@@ -24,7 +24,7 @@
 
     2. A home contém a baixo da lista um botão "Carregar mais", que quando clicado, busca mais 10 pokemons e adiciona a listagem atual; ❌
 
-    3. Essa listagem mostra a imagem e nome de cada pokemon; ❌
+    3. Essa listagem mostra a imagem e nome de cada pokemon; ✅
 
     4. Na listagem, ao clicar em cada pokemon exibirá um container de informações detalhadas sobre o pokemon, como: ❌
         - Lista de movimentos do pokemon (moves); ❌
@@ -42,9 +42,9 @@
     
     3. Context API para criação do Theme Toggler (Alternador entre tema claro e escuro); ❌
 
-    4. Styled Components para melhor estilização dos componentes; ❌
+    4. Styled Components para melhor estilização dos componentes; ✅
     
-    5. Utilizar React Router Dom para a navegação entre as páginas de modo SPA. ❌
+    5. Utilizar React Router Dom para a navegação entre as páginas de modo SPA. ✅
 
 
 ## Status
