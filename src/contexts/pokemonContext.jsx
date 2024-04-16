@@ -25,21 +25,27 @@ export const PokemonProvider = ({ children}) => {
     
     // getDataPokemon()
     
+    const photoPokemon = dataPokemons.urls.map((url) => {
+        photo: `url`
+    })
+
     useEffect(() => {
         async function getPokemonsList() {
-            const response = await api.get(``)
-            handlePokemonCount(response.data.count)
-            setPokemonsList(response.data.results)
+            const responseApi = await api.get(``)
+
+
+            handlePokemonCount(responseApi.data.count)
+            setPokemonsList(responseApi.data.results)
         
             setDataPokemons(prevState => ({
                 ...prevState,
-                names: response.data.results.map(pokemon => pokemon.name),
-                urls: response.data.results.map(pokemon => pokemon.url)
+                names: responseApi.data.results.map(pokemon => pokemon.name),
+                urls: responseApi.data.results.map(pokemon => pokemon.url)
             }))
         }
 
         getPokemonsList()
-        console.log(dataPokemons)
+        console.log(`https://pokeapi.co/api/v2/pokemon/1/`)
     }, []);
 
     return (
