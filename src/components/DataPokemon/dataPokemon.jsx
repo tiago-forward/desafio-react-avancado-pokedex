@@ -10,20 +10,22 @@ export function DataPokemon() {
                     <span>Grass</span>
                     <span>Poison</span>
                 </div>
-                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${1}.png`} width={"200px"} alt="" />
+                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${6}.png`} width={"200px"} alt="" />
             </div>
+
             <div className="description-container">
-                <nav>
-                    <a href="#">Abilities</a>
-                    <a href="#">Moves</a>
-                </nav>
+                <span className="title">Abilities</span>
 
                 <div className="abilities-description">
-                    <span className="abilities">Ágil</span>
+                    <span className="abilities">- Ágil</span>
                     <p>Pokémon is paralyzed and acquires this ability, its paralysis is healed; this includes when regaining a lost ability upon leaving battle.</p>
+                </div>
 
-                    <span className="abilities">Impostor</span>
-                    <p>This Pokémon transforms into a random opponent upon entering battle.  This effect is identical to the move transform.</p>
+                <span className="title">Moves</span>
+
+                <div className="moves-description">
+                    <span className="moves">- Transformar</span>
+                    <p>Pokémon is paralyzed and acquires this ability, its paralysis is healed; this includes when regaining a lost ability upon leaving battle.</p>
                 </div>
             </div>
         </Container>
@@ -44,7 +46,7 @@ export const Container = styled.div`
         flex-direction: column;
         align-items: start;
         position: relative;
-        margin-bottom: 10rem;
+        margin-bottom: 18rem;
 
         h1 {
             color: #4c4c4c;
@@ -69,7 +71,7 @@ export const Container = styled.div`
             top: 100%;
             left: 50%;
             width: 300px;
-            transform: translate(-50%, -15%);
+            transform: translate(-50%, 0%);
         }
     }
 
@@ -84,40 +86,20 @@ export const Container = styled.div`
         box-shadow: rgba(0, 0, 0, 0.24) 0px -1px 8px;
         z-index: 1;
 
-        nav {
-            display: flex;
-            justify-content: space-around;
-            font-weight: 700;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid #919191;
+        .title {
+            display: block;
+            font-size: 1.5rem;
+            text-align: center;
             margin-bottom: 1rem;
-            gap: 0.5rem;
-
-            a {
-                text-align: center;
-                color: black;
-                padding: 1rem 0rem;
-                width: 100%;
-                border-radius: 0.8rem;
-            
-                &:hover {
-                    background-color: #b0b0b0a8;
-                }
-
-                &:active {
-                    background-color: #919191;
-                }
-            }
         }
 
-        .abilities-description {
+        .moves-description, .abilities-description {
             display: flex;
             flex-direction: column;
             gap: 1rem;
 
-            .abilities {
+            .moves, .abilities {
                 font-weight: 700;
-                text-align: center;
             }
         }
     }
