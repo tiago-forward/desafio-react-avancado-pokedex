@@ -4,34 +4,22 @@ import { api } from "../services/api";
 
 export const PokemonContext = createContext()
 
-export const PokemonProvider = ({ children}) => {
+export const PokemonProvider = ({ children }) => {
     const [pokemonsList, setPokemonsList] = useState([])
     const [dataPokemons, setDataPokemons] = useState({
         names: [],
         urls: []
     })
+    const [visibleCount, setVisibleCount] = useState(10)
 
     async function handlePokemonCount(count) {
         let countPokemons = count 
         return countPokemons //1302
     }
 
-    // async function getDataPokemon() {
-    //     const newDataPokemons = pokemonsList.map((pokemon) => ({
-    //         name: pokemon.name,
-    //         url: pokemon.url
-    //     }))
-    // }
-    
-    // getDataPokemon()
-    
-    const photoPokemon = dataPokemons.urls.map((url) => {
-        photo: `url`
-    })
-
     useEffect(() => {
         async function getPokemonsList() {
-            const responseApi = await api.get(``)
+            const responseApi = await api.get(`?limit=${visibleCount}`)
 
 
             handlePokemonCount(responseApi.data.count)
@@ -45,11 +33,10 @@ export const PokemonProvider = ({ children}) => {
         }
 
         getPokemonsList()
-        console.log(`https://pokeapi.co/api/v2/pokemon/1/`)
-    }, []);
+    }, [visibleCount]);
 
     return (
-        <PokemonContext.Provider value={{ pokemonsList, dataPokemons }}>
+        <PokemonContext.Provider value={{ dataPokemons, visibleCount, setVisibleCount }}>
             {children}
         </PokemonContext.Provider>
     )

@@ -19,17 +19,11 @@ export function CardPokemonList() {
                     ))}
                 </ul>
             </div>
-
-            <button>Carregar mais</button>
         </CardContainer>
     )
 }
 
 export const CardContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
     
     ul {
         display: flex;
@@ -69,25 +63,6 @@ export const CardContainer = styled.div`
             text-transform: capitalize;
             margin-bottom: 1rem;
             margin-top: 1rem;
-        }
-    }
-
-
-    button {
-        cursor: pointer;
-        width: 10rem;
-        height: 3rem;
-        border-radius: 0.5rem;
-        margin-bottom: 2rem;
-        border: none;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    
-        &:hover {
-            background-color: #f3f3f383;
-        }
-        
-        &:active {
-            transform: scale(1.1);
         }
     }
 `
