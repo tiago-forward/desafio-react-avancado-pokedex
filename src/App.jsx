@@ -1,6 +1,8 @@
-import { PokemonProvider } from "./contexts/pokemonContext"
-import { Home } from "./page/home"
+import LogoPokemon from "./assets/logo-pokemon.png"
 import { GlobalStyles } from "./styles/GlobalStyles"
+
+import { PokemonProvider } from "./contexts/pokemonContext"
+import { AppRoutes } from "./router/routes"
 
 function App() {
 
@@ -8,7 +10,13 @@ function App() {
     <>
       <GlobalStyles />
       <PokemonProvider>
-        <Home />
+        <header>
+          <img width={"300px"} src={LogoPokemon} alt="Pokemon" />
+        </header>
+        <AppRoutes />
+        <footer>
+          
+        </footer>
       </PokemonProvider>
     </>
   )

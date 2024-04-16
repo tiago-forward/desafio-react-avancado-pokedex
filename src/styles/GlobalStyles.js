@@ -13,6 +13,12 @@ export const GlobalStyles = createGlobalStyle`
         background-color: lightcoral;
     }
 
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     li {
         list-style-type: none;
     }
