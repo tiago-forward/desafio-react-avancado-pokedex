@@ -1,6 +1,7 @@
+import { api } from "../services/api";
+
 import { createContext } from "react";
 import { useEffect, useState } from "react";
-import { api } from "../services/api";
 
 export const PokemonContext = createContext()
 
