@@ -32,7 +32,7 @@
         - Lista de movimentos do pokemon (moves); ✅
         - Lista de habilidades do pokemon (abilities); ✅
         - Na lista de habilidades apresenta o nome e o texto
-    descritivo da habilidade. ❌
+    descritivo da habilidade. ✅
 
 
 <li>Foram aplicados os seguintes requistos técnicos:<br><br>
