@@ -26,12 +26,12 @@
 
     3. Essas listagens mostra a imagem e nome de cada pokemon; ✅
 
-    4. Na listagem, ao clicar em cada pokemon, vai exibir um container de informações detalhadas sobre o pokemon, como: ❌
-        - Tipo do pokemon (type). ❌
-        - Lista de movimentos do pokemon (moves); ❌
-        - Lista de habilidades do pokemon (abilities); ❌
+    4. Na listagem, ao clicar em cada pokemon, vai exibir um container de informações detalhadas sobre o pokemon, como: ✅
+        - Tipo do pokemon (type). ✅
+        - Lista de movimentos do pokemon (moves); ✅
+        - Lista de habilidades do pokemon (abilities); ✅
         - Na lista de habilidades apresenta o nome e o texto
-    descritivo da habilidade.
+    descritivo da habilidade. ❌
 
 
 <li>Neste projeto foram aplicados os seguintes requistos:<br><br>
