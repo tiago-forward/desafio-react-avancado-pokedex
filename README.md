@@ -78,26 +78,27 @@ Este desafio me proporcionou muita satisfação ao concluí-lo. Além disso, pud
 - Context API
 - Styled Components
 - React Router Dom
+- Axios
 - GIT
 
 <!-- - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh -->
 
-
-axios
-
 ## Instalando e executando o projeto
 
 1º Clone o repositório do projeto em HTTPS ou SSH com sua SSH key
-```bash
+
 HTTPS
+```bash
   git clone https://github.com/tiago-forward/desafio-react-avancado-pokedex.git
+```
 
 SSH
+```bash
   git clone git@github.com:Igor-progm/app-pokedex-quest-react-avancado.git
 ```
+
 Em sua máquina, crie uma nova pasta e execute o git, e em seguida cole um dos links acima.
-<br>
 <br>
 
 2º Entre no diretório do projeto na qual foi clonado
@@ -105,14 +106,12 @@ Em sua máquina, crie uma nova pasta e execute o git, e em seguida cole um dos l
 ```bash
   cd desafio-react-avancado-pokedex
 ```
-<br>
 
 3º Execute o comando abaixo para instalar todas as dependências utilizadas
 
 ```bash
   npm install
 ```
-<br>
 
 4º Inicialize a aplicação para ver o código funcionando na web
 
