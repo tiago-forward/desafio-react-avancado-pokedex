@@ -1,31 +1,72 @@
 import styled from "styled-components"
 
+import { api } from "../../services/api"
+
+import { useState, useEffect } from "react"
+
+import { useLocation } from "react-router-dom"
+
 export function DataPokemon() {
+    const location = useLocation();
+    const index = new URLSearchParams(location.search).get('index');
+    const [dataPokemons, setDataPokemons] = useState({
+        id: null,
+        name: '',
+        types: [],
+        abilities: [],
+        abilitiesDescriptionUrl: [],
+        moves: []
+    })
+
+    useEffect(() => {
+        async function getPokemonsDetails() {
+            const response = await api.get(`${index}`)
+            console.log(response)
+            setDataPokemons(prevState => ({
+                id: response.data.id,
+                name: response.data.name,
+                types: response.data.types.map((item) => item.type.name),
+                abilities: response.data.abilities.map((item) => item.ability.name),
+                abilitiesDescriptionUrl: response.data.abilities.map((item) => item.ability.url),
+                moves: response.data.moves.map((item) => item.move.name)
+            }))
+        }
+
+        getPokemonsDetails()
+        console.log(dataPokemons.abilitiesDescriptionUrl)
+    }, []);
 
     return (
         <Container>
             <div className="header">
-                <h1>Bubalsaur</h1>
+                <h1>{dataPokemons.name}</h1>
                 <div className="type">
-                    <span>Grass</span>
-                    <span>Poison</span>
+                    {dataPokemons.types.map((value, index) => (
+                        <span key={index}>{value}</span>
+                    ))}
                 </div>
-                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${6}.png`} width={"200px"} alt="" />
+                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index}.png`} width={"200px"} alt="" />
             </div>
 
             <div className="description-container">
                 <span className="title">Abilities</span>
 
                 <div className="abilities-description">
-                    <span className="abilities">- Ágil</span>
-                    <p>Pokémon is paralyzed and acquires this ability, its paralysis is healed; this includes when regaining a lost ability upon leaving battle.</p>
+                    {dataPokemons.abilities.map((value, index) => (
+                        <>
+                            <span className="abilities" key={index}>{index +1}. {value}</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ut aperiam ipsam omnis voluptatibus ea magnam laudantium, temporibus porro facilis optio repudiandae enim id possimus odit cum libero voluptates laboriosam.</p>
+                        </>
+                    ))}
+
                 </div>
 
                 <span className="title">Moves</span>
 
                 <div className="moves-description">
-                    <span className="moves">- Transformar</span>
-                    <p>Pokémon is paralyzed and acquires this ability, its paralysis is healed; this includes when regaining a lost ability upon leaving battle.</p>
+                    {dataPokemons.moves.map((value, index) => (
+                        <span className="moves" key={index}>{index +1}. {value}</span>
+                    ))}
                 </div>
             </div>
         </Container>
@@ -51,6 +92,7 @@ export const Container = styled.div`
         h1 {
             color: #4c4c4c;
             margin: 1rem 0rem;
+            text-transform: capitalize;
         }
 
         .type {
@@ -63,6 +105,7 @@ export const Container = styled.div`
                 background-color: #b0b0b0a8;
                 padding: 0.3rem;
                 border-radius: 0.5em;
+                text-transform: capitalize;
             }
         }
 
@@ -91,6 +134,7 @@ export const Container = styled.div`
             font-size: 1.5rem;
             text-align: center;
             margin-bottom: 1rem;
+            margin-top: 0.8rem;
         }
 
         .moves-description, .abilities-description {
