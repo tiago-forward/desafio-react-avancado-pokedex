@@ -7,7 +7,8 @@
 <li><a href="#objetivo">Objetivo</a></li>
 <li><a href="#status">Status</a></li>
 <!-- <li><a href="#curiosidade">Curiosidade</a></li> -->
-<li><a href="#tecnologias">Tecnologias</a></li>
+<li><a href="#tecnologias-utilizadas">Tecnologias</a></li>
+<li><a href="#instalando-e-executando-o-projeto">Instalação</a></li>
 </ul>
 
 ## Introdução
@@ -18,7 +19,7 @@
 
 #### Criar uma página inicial de listagem de alguns pokemons, utilizando a api [https://pokeapi.co/](https://pokeapi.co/) e criar uma página interna de detalhes do pokemon.
 
-<li>Neste site contém as seguintes informações:<br><br>
+<li>Neste projeto contém as seguintes informações:<br><br>
 
     1. A home apresenta uma listagem com 10 pokemons iniciais; ✅
 
@@ -34,17 +35,27 @@
     descritivo da habilidade. ❌
 
 
-<li>Neste projeto foram aplicados os seguintes requistos:<br><br>
+<li>Foram aplicados os seguintes requistos técnicos:<br><br>
 
     1. Single Page Application (SPA); ✅
 
-    2. React.js para o desenvolvimento prático, limpo e dinâmico da aplicação; ✅
-    
-    3. Context API para criação do Theme Toggler (Alternador entre tema claro e escuro); ❌
+    Exibindo todo o conteúdo que o usuário deseja em uma única página, sem recarregar.
 
-    4. Styled Components para melhor estilização dos componentes; ✅
+    2. React.js; ✅
     
-    5. Utilizar React Router Dom para a navegação entre as páginas de modo SPA. ✅
+    Desenvolvimento prático, flexível e dinâmico da aplicação.
+    
+    3. Context API; ❌
+    
+    Criação do Theme Toggler, para alternar entre os tema claro e escuro de forma global.
+
+    4. Styled Components; ✅
+    
+    Para melhor estilização dos componentes e de fácil manutenção.
+    
+    5. React Router Dom. ✅
+    
+    Para uma melhor navegação entre as páginas de modo SPA.
 
 
 ## Status
@@ -58,7 +69,7 @@ Projeto iniciado. 🥰
 
 Este desafio me proporcionou muita satisfação ao concluí-lo. Além disso, pude observar a qualidade da estrutura e organização do código, que são ensinadas pelos professores do curso DevQuest no módulo de JavaScript. Consegui compreender todas as explicações sobre a construção do código e pude concluir as 3 solicitações, mantendo a estrutura original do código. -->
 
-## Tecnologias e bibliotecas
+## Tecnologias utilizadas
 
 - HTML
 - CSS
@@ -74,3 +85,41 @@ Este desafio me proporcionou muita satisfação ao concluí-lo. Além disso, pud
 
 
 axios
+
+## Instalando e executando o projeto
+
+1º Clone o repositório do projeto em HTTPS ou SSH com sua SSH key
+```bash
+HTTPS
+  git clone https://github.com/tiago-forward/desafio-react-avancado-pokedex.git
+
+SSH
+  git clone git@github.com:Igor-progm/app-pokedex-quest-react-avancado.git
+```
+Em sua máquina, crie uma nova pasta e execute o git, e em seguida cole um dos links acima.
+<br>
+<br>
+
+2º Entre no diretório do projeto na qual foi clonado
+
+```bash
+  cd desafio-react-avancado-pokedex
+```
+<br>
+
+3º Execute o comando abaixo para instalar todas as dependências utilizadas
+
+```bash
+  npm install
+```
+<br>
+
+4º Inicialize a aplicação para ver o código funcionando na web
+
+```bash
+  npm run dev
+```
+
+<!-- ## Contribuições
+
+Contribua com esse projeto e me ajuda a aprender melhores soluções de código e novas funcionalidades -->
