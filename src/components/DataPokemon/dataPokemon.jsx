@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 import { api } from "../../services/api"
+import { AbilitiesPokemon } from "./abilitiesPokemon";
 
 import { useState, useEffect } from "react"
 
@@ -21,8 +22,8 @@ export function DataPokemon() {
     useEffect(() => {
         async function getPokemonsDetails() {
             const response = await api.get(`${index}`)
-            console.log(response)
-            setDataPokemons(prevState => ({
+            setDataPokemons((prevState) => ({
+                ...prevState,
                 id: response.data.id,
                 name: response.data.name,
                 types: response.data.types.map((item) => item.type.name),
@@ -33,7 +34,6 @@ export function DataPokemon() {
         }
 
         getPokemonsDetails()
-        console.log(dataPokemons.abilitiesDescriptionUrl)
     }, []);
 
     return (
@@ -50,15 +50,11 @@ export function DataPokemon() {
 
             <div className="description-container">
                 <span className="title">Abilities</span>
-
+                
                 <div className="abilities-description">
-                    {dataPokemons.abilities.map((value, index) => (
-                        <>
-                            <span className="abilities" key={index}>{index +1}. {value}</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ut aperiam ipsam omnis voluptatibus ea magnam laudantium, temporibus porro facilis optio repudiandae enim id possimus odit cum libero voluptates laboriosam.</p>
-                        </>
+                    {dataPokemons.abilities.map((item, index) => (
+                        <AbilitiesPokemon key={index} ability={item} abilityUrl={dataPokemons.abilitiesDescriptionUrl[index]} />
                     ))}
-
                 </div>
 
                 <span className="title">Moves</span>
@@ -137,14 +133,33 @@ export const Container = styled.div`
             margin-top: 0.8rem;
         }
 
-        .moves-description, .abilities-description {
+        .abilities-description {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
 
-            .moves, .abilities {
-                font-weight: 700;
+            span {
+                font-weight: 600;
+                text-transform: capitalize;
             }
+
+            p {
+                margin-bottom: 0.7rem;
+            }
+        }
+
+        .description {
+            margin-bottom: 0.5rem;
+        }
+
+        .moves-description {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .moves, .abilities {
+            font-weight: 700;
         }
     }
 `
