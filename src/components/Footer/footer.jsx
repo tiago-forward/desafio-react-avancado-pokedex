@@ -1,5 +1,3 @@
-import "bootstrap-icons/font/bootstrap-icons.css";
-
 import { FooterContainer } from "./footer.style";
 
 import { useContext } from "react";
