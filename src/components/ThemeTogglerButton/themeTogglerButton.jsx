@@ -1,3 +1,5 @@
+import { Button } from "./themeTogglerButton.style"
+
 import { useContext } from "react"
 import { ThemeContext } from "../../contexts/themeContext"
 
@@ -14,7 +16,7 @@ export const ThemeTogglerButton = ({ }) => {
 
     return (
         <>
-            <button onClick={handleButtonTheme}>Trocar de tema</button>
+            <Button theme={theme} onClick={handleButtonTheme}>Trocar de tema</Button>
         </>
     )
 }
