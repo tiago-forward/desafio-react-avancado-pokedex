@@ -1,9 +1,13 @@
 import { AbilitiesContainer } from "./abilitiesPokemon.style";
 
 import axios from "axios";
+import { useContext } from "react";
 import { useEffect, useState } from "react";
+import { ThemeContext } from "../../../contexts/themeContext";
 
 export function AbilitiesPokemon({ ability, abilityUrl }) {
+    const { theme } = useContext(ThemeContext)
+
     const [abilityDescription, setAbilityDescription] = useState([]);
 
     useEffect(() => {
@@ -21,7 +25,7 @@ export function AbilitiesPokemon({ ability, abilityUrl }) {
     }, []);
       
   return (
-    <AbilitiesContainer>
+    <AbilitiesContainer theme={theme}>
       <span className="title">{ability}</span>
         {abilityDescription
             ? (

@@ -10,6 +10,7 @@ export const FooterContainer = styled.footer`
     p, span {
         line-height: 1.4rem;
         text-align: center;
+        color: ${props => props.theme.paragraph};
     }
 
     span {

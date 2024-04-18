@@ -8,7 +8,7 @@ import { CardPokemonList } from "../../components/Cards/cardPokemonList"
 
 export function Home() {
     const { setCardCount } = useContext(PokemonContext)
-    const { theme, setTheme } = useContext(ThemeContext)
+    const { theme } = useContext(ThemeContext)
     
     function onButtonMorePages() {
         setCardCount(prevState => prevState + 10)

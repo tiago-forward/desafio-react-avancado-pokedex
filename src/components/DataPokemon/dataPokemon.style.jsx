@@ -6,7 +6,7 @@ export const Container = styled.section`
     align-items: center;
     border-radius: 0.5rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: #f0d7d4;
+    background-color: ${props => props.theme.backgroundDataPokemon};
 
     .header {
         display: flex;
@@ -16,7 +16,7 @@ export const Container = styled.section`
         margin-bottom: 22rem;
 
         .name-pokemon {
-            color: #2d2121;
+            color: ${props => props.theme.colorNameTitle};
             margin: 1rem 0rem;
             text-transform: capitalize;
         }
@@ -28,8 +28,8 @@ export const Container = styled.section`
 
             .attribute-type {
                 font-size: 0.8rem;
-                background-color: #b0b0b0a8;
-                color: black;
+                background-color: ${props => props.theme.backgroundType};
+                color: ${props => props.theme.colorNameTag};
                 padding: 0.3rem;
                 border-radius: 0.5em;
                 text-transform: capitalize;
@@ -47,7 +47,7 @@ export const Container = styled.section`
 
     .description-container{
         width: 100%;
-        background-color: #DDC0BD;
+        background-color: ${props => props.theme.backgroundDescription};
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
         border-bottom-left-radius: 0.5rem;
@@ -71,6 +71,7 @@ export const Container = styled.section`
             flex-wrap: wrap;
             justify-content: center;
             gap: 1rem;
+            color: ${props => props.theme.colorNameTag};
         }
     }
 `

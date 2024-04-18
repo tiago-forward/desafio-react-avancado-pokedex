@@ -14,14 +14,14 @@ export const CardContainer = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 1px solid #ffffff;
+        border: 1px solid var(--white);
         border-radius: 0.5rem;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        background-color: #f0d7d4;
+        background-color: ${props => props.theme.backgroundCard};
 
         &:hover {
             box-shadow: rgba(255, 255, 255, 0.24) 0px 0px 20px;
-            background-color: #f0d7d4e8;
+            background-color: ${props => props.theme.hoverCard};
         }
 
         img {
@@ -35,7 +35,7 @@ export const CardContainer = styled.div`
         }
 
         span {
-            color: black;
+            color: ${props => props.theme.colorNameTitle};
             font-weight: 700;
             text-transform: capitalize;
             margin-bottom: 1rem;

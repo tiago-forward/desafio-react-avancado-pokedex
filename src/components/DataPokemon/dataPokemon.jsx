@@ -10,11 +10,17 @@ import { useState, useEffect } from "react"
 
 import { useLocation } from "react-router-dom"
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { ThemeContext } from "../../contexts/themeContext";
 
 export function DataPokemon() {
+    const { theme } = useContext(ThemeContext)
+
     const location = useLocation();
     const index = new URLSearchParams(location.search).get('index');
+
     const [loadingStateApi, setLoadingStateApi] = useState(false)
+
     const [dataPokemon, setDataPokemon] = useState({
         id: '',
         name: '',
@@ -47,7 +53,7 @@ export function DataPokemon() {
     }, []);
 
     return (
-        <Container>
+        <Container theme={theme}>
             {loadingStateApi
                 ? (
                     <>
