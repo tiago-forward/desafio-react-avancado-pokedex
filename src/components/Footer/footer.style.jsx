@@ -22,8 +22,13 @@ export const FooterContainer = styled.footer`
         gap: 2rem;
         margin-bottom: 2rem;
 
-        img {
-            width: 2rem;
+        i {
+            font-size: 2rem;
+            color: ${props => props.theme.iconRedes};
+
+            &:hover {
+                color: ${props => props.theme.iconHover};
+            }
         }
 
     }

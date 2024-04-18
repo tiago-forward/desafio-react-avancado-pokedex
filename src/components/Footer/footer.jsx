@@ -1,6 +1,4 @@
-import IconLinkedIn from "../../assets/icon-linkedin.svg"
-import IconGitHub from "../../assets/icon-github.svg"
-import IconEmail from "../../assets/icon-email.svg"
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 import { FooterContainer } from "./footer.style";
 
@@ -19,17 +17,17 @@ export const Footer = () => {
             <ul>
                 <li>
                     <a href="https://www.linkedin.com/in/tiago-lacerda-devfrontend/" target="_blank">
-                        <img title="LinkedIn" src={IconLinkedIn} alt="Icon LinkedIn" />
+                        <i title="LinkdIn" class="bi bi-linkedin"></i>
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/tiago-forward" target="_blank">
-                        <img title="GitHub" src={IconGitHub} alt="Icon GitHub" />
+                        <i title="GitHub" class="bi bi-github"></i>
                     </a>
                 </li>
                 <li>
                     <a href="mailto:devtiagoforward@gmail.com" target="_blank">
-                        <img title="Email" src={IconEmail} alt="Icon Email" />
+                        <i title="Email" class="bi bi-envelope"></i>
                     </a>
                 </li>
             </ul>

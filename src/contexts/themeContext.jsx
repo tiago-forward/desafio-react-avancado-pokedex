@@ -13,7 +13,9 @@ export const themes = {
         colorNameTag: '#000000',
         backgroundType: '#b0b0b0a8',
         backgroundDescription: '#DDC0BD',
-        paragraph: '#000000'
+        paragraph: '#000000',
+        iconRedes: '#000000',
+        iconHover: '#2d2121'
     },
     dark: {
         backgroundPage: '#1a0d0d',
@@ -27,7 +29,9 @@ export const themes = {
         colorNameTag: '#000000',
         backgroundType: '#b0b0b0a8',
         backgroundDescription: '#b0b0b0a8',
-        paragraph: '#ffffff'
+        paragraph: '#ffffff',
+        iconRedes: '#ffffff',
+        iconHover: '#b0b0b0a8'
     }
 }
 
