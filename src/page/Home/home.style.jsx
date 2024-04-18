@@ -23,7 +23,8 @@ export const Main = styled.main`
     
     
         &:hover {
-            background-color: #f3f3f383;
+            background-color: #ddc0bd;
+            box-shadow: inset rgb(255, 255, 255) 0px 0px 2px;
         }
         
         &:active {

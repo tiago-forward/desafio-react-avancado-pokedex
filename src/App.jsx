@@ -1,4 +1,5 @@
 import LogoPokemon from "./assets/logo-pokemon.png"
+
 import { GlobalStyles } from "./styles/GlobalStyles"
 
 import { PokemonProvider } from "./contexts/pokemonContext"
