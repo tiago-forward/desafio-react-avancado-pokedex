@@ -1,3 +1,5 @@
+import IconXCircleFill from "../../assets/icon-x-circlefill.svg"
+
 import { Container } from "./dataPokemon.style";
 
 import { api } from "../../services/api"
@@ -7,6 +9,7 @@ import { TitleDataPokemon } from "./components/titleDataPokemon"
 import { useState, useEffect } from "react"
 
 import { useLocation } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export function DataPokemon() {
     const location = useLocation();
@@ -48,6 +51,11 @@ export function DataPokemon() {
             {loadingStateApi
                 ? (
                     <>
+                        <div style={{width: '100%', display: 'flex', justifyContent: 'end'}}>
+                            <Link to={"/"}>
+                                <img title="Return to home" style={{width: '30px', margin: '0.5rem'}} src={IconXCircleFill} alt="Return to home icon" />
+                            </Link>
+                        </div>
                         <div className="header">
                             <h1 className="name-pokemon">{dataPokemon.name}</h1>
                             <div className="attribute-type-container">
