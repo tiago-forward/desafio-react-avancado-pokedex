@@ -21,9 +21,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        padding: 0 15px;
         font-family: Arial, Helvetica, sans-serif;
-        background-color: lightcoral;
         display: flex;
         flex-direction: column;
         align-items: center;

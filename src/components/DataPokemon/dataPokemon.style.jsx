@@ -1,14 +1,12 @@
 import styled from "styled-components"
 
-export const Container = styled.div`
+export const Container = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 0.5rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: #f0d7d4;
-    max-width: 765px;
-    margin: 0 auto;
 
     .header {
         display: flex;
@@ -54,11 +52,14 @@ export const Container = styled.div`
         border-top-right-radius: 1rem;
         border-bottom-left-radius: 0.5rem;
         border-bottom-right-radius: 0.5rem;
-        padding: 1rem;
+        padding: 1.5rem;
         box-shadow: rgba(0, 0, 0, 0.24) 0px -1px 8px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+
+        h2 {
+            text-align: center;
+        }
 
         .abilities-description {
             display: flex;

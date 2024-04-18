@@ -65,18 +65,14 @@ export function DataPokemon() {
                             </div>
                             <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${index}.svg`} width={"200px"} alt="" />
                         </div>
-
                         <div className="description-container">
                             <TitleDataPokemon className="title" name="Abilities" />
-
                             <div className="abilities-description">
                                 {dataPokemon.abilities.map((item, index) => (
                                     <AbilitiesPokemon key={index} ability={item} abilityUrl={dataPokemon.abilitiesDescriptionUrl[index]} />
                                 ))}
                             </div>
-
                             <TitleDataPokemon className="title" name="Moves" />
-
                             <div className="moves-description">
                                 {dataPokemon.moves.map((value, index) => (
                                     <span className="moves" key={index}>{index + 1}. {value}</span>
@@ -85,7 +81,7 @@ export function DataPokemon() {
                         </div>
                     </>
                 )
-                : <p>Loading data...</p> 
+                : <p>Loading data...</p>
             }
         </Container>
     )
