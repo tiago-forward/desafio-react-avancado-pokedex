@@ -5,6 +5,8 @@ import { GlobalStyles } from "./styles/GlobalStyles"
 import { PokemonProvider } from "./contexts/pokemonContext"
 import { AppRoutes } from "./router/routes"
 
+import { Footer } from "./components/Footer/footer"
+
 function App() {
 
   return (
@@ -15,9 +17,7 @@ function App() {
           <img width={"300px"} src={LogoPokemon} alt="Pokemon" />
         </header>
         <AppRoutes />
-        <footer>
-          
-        </footer>
+        <Footer />
       </PokemonProvider>
     </>
   )
