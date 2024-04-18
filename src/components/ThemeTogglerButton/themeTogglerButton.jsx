@@ -16,7 +16,12 @@ export const ThemeTogglerButton = ({ }) => {
 
     return (
         <>
-            <Button theme={theme} onClick={handleButtonTheme}>Change theme</Button>
+            <Button key={theme} theme={theme} onClick={handleButtonTheme}>
+                {theme === themes.light 
+                    ? (<i className="bi bi-sun"></i>) 
+                    : (<i className="bi bi-moon"></i>)
+                }
+            </Button>
         </>
     )
 }
