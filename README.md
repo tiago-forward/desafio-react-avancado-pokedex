@@ -5,10 +5,11 @@
 <ul>
 <li><a href="#introdução">Introdução</a></li>
 <li><a href="#objetivo">Objetivo</a></li>
-<li><a href="#status">Status</a></li>
-<!-- <li><a href="#curiosidade">Curiosidade</a></li> -->
+<li><a href="#status">Status e Layout</a></li>
+<li><a href="#curiosidade">Curiosidade</a></li>
 <li><a href="#tecnologias-utilizadas">Tecnologias</a></li>
 <li><a href="#instalando-e-executando-o-projeto">Instalação</a></li>
+<li><a href="#acessando-o-site">Acessando o site</a></li>
 </ul>
 
 ## Introdução
@@ -60,14 +61,16 @@
 
 ## Status
 
-Projeto iniciado. 🥰
+Desafio concluído. 🥰
 
-<!-- ### Layout Desktop / Mobile
-<img src="./src/gif/projeto-funcionando.gif" alt="Gif do desafio funcionando em ambas as telas"> -->
+### Layout Desktop / Mobile
 
-<!-- ## Curiosidade
+<img src="./src/assets/layout-descktop.gif" alt="Gif do layout funcionando">
+<img src="./src/assets/layout-mobile.gif" alt="Gif do layout funcionando">
 
-Este desafio me proporcionou muita satisfação ao concluí-lo. Além disso, pude observar a qualidade da estrutura e organização do código, que são ensinadas pelos professores do curso DevQuest no módulo de JavaScript. Consegui compreender todas as explicações sobre a construção do código e pude concluir as 3 solicitações, mantendo a estrutura original do código. -->
+## Curiosidade
+
+Este projeto me proporcionou muitos desafios, principalmente para armazenar os dados da API do PokeAPI e poder utilizá-los da melhor maneira. Mas também foi muito gratificando ver que depois de muita luta eu conseguir fazer funcionar, e acredito que meu código está cada vez mais próximo de um código limpo comparando projetos anteriores, estou começando a estudar Clean Code e SEO.
 
 ## Tecnologias utilizadas
 
@@ -122,3 +125,7 @@ Em sua máquina, crie uma nova pasta e execute o git, e em seguida cole um dos l
 <!-- ## Contribuições
 
 Contribua com esse projeto e me ajuda a aprender melhores soluções de código e novas funcionalidades -->
+
+## Acessando o site
+
+Para acessar meu projeto online, acesse esse link : <a href="https://desafio-react-avancado-pokedex.vercel.app/" target="_blank">Desafio React Avançado | Projeto Pokédex</a>
