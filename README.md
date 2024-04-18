@@ -45,10 +45,10 @@
     
     Desenvolvimento prático, flexível e dinâmico da aplicação.
     
-    3. Context API; ❌
+    3. Context API; ✅
     
-    Criação do Theme Toggler, para alternar entre os tema claro e escuro de forma global.
-
+    Criação do Theme Toggler, para alternar entre os tema claro e escuro de forma global e PokemonContext, para usar dados recebidos da PokeAPI de forma global.
+  
     4. Styled Components; ✅
     
     Para melhor estilização dos componentes e de fácil manutenção.
