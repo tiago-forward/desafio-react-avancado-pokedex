@@ -1,5 +1,3 @@
-import LogoPokemon from "./assets/logo-pokemon.png"
-
 import { GlobalStyles } from "./styles/GlobalStyles"
 
 import { useContext } from "react"
@@ -8,7 +6,7 @@ import { ThemeContext } from "./contexts/themeContext"
 
 import { AppRoutes } from "./router/routes"
 
-import { ThemeTogglerButton } from "./components/ThemeTogglerButton/themeTogglerButton"
+import { Header } from "./components/Header/header"
 import { Footer } from "./components/Footer/footer"
 
 function App() {
@@ -18,10 +16,7 @@ function App() {
     <div style={{backgroundColor: theme.backgroundPage, padding: '0 15px'}}>
       <GlobalStyles />
       <PokemonProvider>
-        <header>
-          <img width={"300px"} src={LogoPokemon} alt="Pokemon" />
-          <ThemeTogglerButton />
-        </header>
+        <Header />
         <AppRoutes />
         <Footer />
       </PokemonProvider>

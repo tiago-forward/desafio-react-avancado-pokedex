@@ -21,12 +21,6 @@ export const GlobalStyles = createGlobalStyle`
         font-family: "Roboto", sans-serif;
     }
 
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
     li {
         list-style-type: none;
     }
