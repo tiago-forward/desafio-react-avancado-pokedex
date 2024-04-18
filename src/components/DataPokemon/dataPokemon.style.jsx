@@ -8,6 +8,7 @@ export const Container = styled.div`
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: #f0d7d4;
     max-width: 765px;
+    margin: 0 auto;
 
     .header {
         display: flex;
