@@ -34,7 +34,9 @@ Criar uma página inicial de listagem de alguns pokemons, utilizando a api [http
         - Lista de movimentos do pokemon (moves); ✅
         - Lista de habilidades do pokemon (abilities); ✅
         - Na lista de habilidades apresenta o nome e o texto
-    descritivo da habilidade. ✅
+    descritivo da habilidade; ✅
+
+    5. Implementado um Input de busca, para localizar qual pokemon o usuário deseja encontrar em uma requisição com 1000 pokemons. ✅
 
 
 <li>Foram aplicados os seguintes requistos técnicos:<br><br>
