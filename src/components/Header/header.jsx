@@ -14,4 +14,4 @@ export const Header = () => {
             <ThemeTogglerButton />
         </header>
     )
-};
+}

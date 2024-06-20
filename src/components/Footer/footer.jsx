@@ -15,20 +15,20 @@ export const Footer = () => {
             <ul>
                 <li>
                     <a href="https://www.linkedin.com/in/tiago-lacerda-devfrontend/" target="_blank">
-                        <i title="LinkdIn" class="bi bi-linkedin"></i>
+                        <i title="LinkdIn" className="bi bi-linkedin"></i>
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/tiago-forward" target="_blank">
-                        <i title="GitHub" class="bi bi-github"></i>
+                        <i title="GitHub" className="bi bi-github"></i>
                     </a>
                 </li>
                 <li>
                     <a href="mailto:devtiagoforward@gmail.com" target="_blank">
-                        <i title="Email" class="bi bi-envelope"></i>
+                        <i title="Email" className="bi bi-envelope"></i>
                     </a>
                 </li>
             </ul>
         </FooterContainer>
     )
-};
+}

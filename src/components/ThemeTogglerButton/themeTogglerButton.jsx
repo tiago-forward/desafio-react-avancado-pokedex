@@ -3,7 +3,7 @@ import { Button } from "./themeTogglerButton.style"
 import { useContext } from "react"
 import { ThemeContext } from "../../contexts/themeContext"
 
-export const ThemeTogglerButton = ({ }) => {
+export const ThemeTogglerButton = () => {
     const { theme, setTheme, themes } = useContext(ThemeContext)
 
     function handleButtonTheme() {

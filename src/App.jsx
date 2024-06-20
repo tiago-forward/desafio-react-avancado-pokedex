@@ -9,7 +9,7 @@ import { AppRoutes } from "./router/routes"
 import { Header } from "./components/Header/header"
 import { Footer } from "./components/Footer/footer"
 
-function App() {
+export function App() {
   const { theme } = useContext(ThemeContext)
 
   return (
@@ -23,5 +23,3 @@ function App() {
     </div>
   )
 }
-
-export default App

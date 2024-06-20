@@ -57,7 +57,7 @@ export function DataPokemon() {
                     <>
                         <div style={{width: '100%', display: 'flex', justifyContent: 'end'}}>
                             <Link style={{margin: '1rem'}} to={"/"}>
-                                <i style={{fontSize: '2rem'}} title="Return to home" class="bi bi-x-circle icon-closed"></i>
+                                <i style={{fontSize: '2rem'}} title="Return to home" className="bi bi-x-circle icon-closed"></i>
                             </Link>
                         </div>
                         <div className="header">

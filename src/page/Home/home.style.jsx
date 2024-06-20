@@ -33,3 +33,59 @@ export const Main = styled.main`
         }
     }
 `
+
+export const SearchInputContainer = styled.div`
+    display:  flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid;
+    color: ${props => props.theme.colorNameTitle};
+    margin-bottom: 1rem;
+
+    h1 {
+        font-weight: 500;
+        font-size: 1.4rem;
+        letter-spacing: 0.2rem;
+
+        color: ${props => props.theme.colorNameTitle};
+
+        padding-bottom: 1rem;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 0.2rem;
+    }
+
+    input {
+        outline: none;
+        border: none;
+
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+
+        font-size: 1rem;
+        
+        color: ${props => props.theme.colorNameTitle};
+        background-color: inherit;
+
+        &::-webkit-input-placeholder {
+            color: ${props => props.theme.inputPlaceholder};
+        }
+
+        &:-moz-placeholder {
+            color: ${props => props.theme.inputPlaceholder};
+        }
+
+        &::-moz-placeholder {
+            color: ${props => props.theme.inputPlaceholder};
+        }
+
+        &:-ms-input-placeholder {
+            color: ${props => props.theme.inputPlaceholder};
+        }
+        
+    }
+`

@@ -38,5 +38,5 @@ export function AbilitiesPokemon({ ability, abilityUrl }) {
             : <p className="description">Loading description...</p>
         }
     </AbilitiesContainer>
-  );
+  )
 }

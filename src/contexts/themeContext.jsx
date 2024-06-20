@@ -15,7 +15,8 @@ export const themes = {
         backgroundDescription: '#DDC0BD',
         paragraph: '#000000',
         iconRedes: '#000000',
-        iconHover: '#2d2121'
+        iconHover: '#2d2121',
+        inputPlaceholder: '#2d212197'
     },
     dark: {
         backgroundPage: '#1a0d0d',
@@ -31,7 +32,8 @@ export const themes = {
         backgroundDescription: '#b0b0b0a8',
         paragraph: '#ffffff',
         iconRedes: '#ffffff',
-        iconHover: '#b0b0b0a8'
+        iconHover: '#b0b0b0a8',
+        inputPlaceholder: '#b0b0b0a8'
     }
 }
 
